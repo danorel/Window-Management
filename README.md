@@ -1,2 +1,2 @@
-# window-management
-JetBrains technical assignment. Window-management library for Linux distributive
+# Window-Management
+JetBrains technical assignment. Window-management library for MacOS.
