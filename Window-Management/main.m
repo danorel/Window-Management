@@ -6,11 +6,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Source/my_view.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // create the application object
+        NSApp = [NSApplication sharedApplication];
+
+        // set up the window and drawing mechanism
+        setup();
+
+        // run the main event loop
+        [NSApp run];
     }
     return 0;
 }
