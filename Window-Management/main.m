@@ -9,14 +9,14 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // create the application object
+        // Create the application object
         NSApp = [NSApplication sharedApplication];
 
-        // set up the window and drawing mechanism
+        // Set up the window and drawing mechanism
         Demo *demo = [[Demo alloc] init];
         [demo setup];
 
-        // run the main event loop
+        // Run the main event loop
         [NSApp run];
     }
     return 0;

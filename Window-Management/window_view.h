@@ -6,6 +6,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NSColor+window_color.h"
 
 #ifndef window_view_h
 #define window_view_h

@@ -11,9 +11,7 @@
 #ifndef demo_h
 #define demo_h
 
-@interface Demo : NSObject {
-    
-}
+@interface Demo : NSObject
 
 - (void) setup;
 
