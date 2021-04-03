@@ -11,16 +11,15 @@
 @implementation DemoView
 
 - (void) drawRect:(NSRect) rect  {
-    NSLog(@"Hello from method!");
-    
-    // get the size of the application's window and view objects
+    [super drawRect:rect];
+
     // float width  = [self bounds].size.width;
     // float height = [self bounds].size.height;
-    
-    [[NSColor whiteColor] set];   // set the drawing color to white
+
+    [[NSColor colorFromHexString:@"#25854b"] set];   // set the drawing color to white
     NSRectFill([self bounds]);    // fill the view with white
     
-    [[NSColor blackColor] set];   // set the drawing color to black
+    [[NSColor colorFromHexString:@"#ffffff"] set];   // set the drawing color to black
 
     NSPoint p1 = NSMakePoint(1, 1);
     NSPoint p2 = NSMakePoint(100, 100);

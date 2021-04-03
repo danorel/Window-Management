@@ -11,8 +11,8 @@
 
 - (void) setup {
     __strong NSWindow *myWindow;      // typed pointer to NSWindow object
-    __strong DemoView   *myView;        // typed pointer to NSView object
-    NSRect    graphicsRect;  // contains an origin, width, height
+    __strong DemoView   *myView;      // typed pointer to NSView object
+    NSRect graphicsRect;  // contains an origin, width, height
 
     // initialize the rectangle variable
     graphicsRect = NSMakeRect(100.0, 350.0, 400.0, 400.0);

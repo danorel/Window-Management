@@ -34,6 +34,7 @@
 		EBED0AC92618A22F0021C55C /* demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo.m; sourceTree = "<group>"; };
 		EBED0ACC2618A2510021C55C /* demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
 		EBED0ACE2618A36E0021C55C /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		EBED0AD02618A8650021C55C /* NSColor+window_color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+window_color.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 				EBED0AC92618A22F0021C55C /* demo.m */,
 				EBED0ACC2618A2510021C55C /* demo.h */,
 				EBED0ACE2618A36E0021C55C /* main.h */,
+				EBED0AD02618A8650021C55C /* NSColor+window_color.h */,
 			);
 			path = "Window-Management";
 			sourceTree = "<group>";
