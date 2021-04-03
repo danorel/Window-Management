@@ -5,13 +5,8 @@
 //  Created by Dan Orel on 03.04.2021.
 //
 
+// Import libraries.
 #import <Cocoa/Cocoa.h>
 
-// Custom imports to source files.
+// Import source files from the project.
 #import "demo.h"
-
-#ifndef main_h
-#define main_h
-
-
-#endif /* main_h */

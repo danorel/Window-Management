@@ -8,12 +8,24 @@
 #import <Cocoa/Cocoa.h>
 #import "NSColor+window_color.h"
 
-#ifndef window_view_h
-#define window_view_h
+/*
+ * Declare the constants for View.
+ * Contants meant for:
+ *  - drawing elements on the screen.
+ *  - drawing background on the screen.
+ */
+#define COLOR_DRAWING @"#ffffff"
+#define COLOR_BACKGROUND @"#25854b"
 
-@interface DemoView : NSView <NSWindowDelegate>
+@interface DemoView : NSView <NSWindowDelegate> {
+    NSColor* const colorDrawing;
+    NSColor* const colorBackground;
+}
+
 - (void) drawRect:(NSRect) rect;
+
+@property (atomic, copy, readwrite) NSColor* colorDrawing;
+@property (atomic, copy, readwrite) NSColor* colorBackground;
+
 @end
 
-
-#endif /* window_view_h */
