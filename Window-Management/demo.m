@@ -1,46 +1,23 @@
 //
-//  my_view.m
+//  demo.m
 //  Window-Management
 //
-//  Created by Dan Orel on 02.04.2021.
+//  Created by Dan Orel on 03.04.2021.
 //
 
-#import "my_view.h"
+#import "demo.h"
 
-@implementation DemoView
+@implementation Demo
 
-- (void) drawRect:(NSRect) rect {
-    NSLog(@"Hello from method!");
-    
-    // get the size of the application's window and view objects
-    // float width  = [self bounds].size.width;
-    // float height = [self bounds].size.height;
-    
-    [[NSColor whiteColor] set];   // set the drawing color to white
-    NSRectFill([self bounds]);    // fill the view with white
-    
-    [[NSColor blackColor] set];   // set the drawing color to black
-
-    NSPoint p1 = NSMakePoint(1, 1);
-    NSPoint p2 = NSMakePoint(100, 100);
-    [NSBezierPath strokeLineFromPoint:p1 toPoint:p2];
-}
-
--(void) windowWillClose:(NSNotification*) notification {
-    [NSApp terminate:self];
-}
-
-@end
-
-void setup(void) {
+- (void) setup {
     __strong NSWindow *myWindow;      // typed pointer to NSWindow object
-    __strong NSView   *myView;        // typed pointer to NSView object
+    __strong DemoView   *myView;        // typed pointer to NSView object
     NSRect    graphicsRect;  // contains an origin, width, height
 
     // initialize the rectangle variable
     graphicsRect = NSMakeRect(100.0, 350.0, 400.0, 400.0);
 
-    myWindow = [[NSWindow alloc]              // create the window
+    myWindow = [[NSWindow alloc]
                 initWithContentRect: graphicsRect
                 styleMask:NSWindowStyleMaskTitled
                          |NSWindowStyleMaskClosable
@@ -60,3 +37,4 @@ void setup(void) {
     [myWindow makeKeyAndOrderFront: nil]; // display window
 }
 
+@end
