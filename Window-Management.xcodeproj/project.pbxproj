@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB0D62282614C33C003C87B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D62272614C33C003C87B2 /* main.m */; };
 		EBED0AC62618A2140021C55C /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC52618A2140021C55C /* view.m */; };
-		EBED0AD92618D22B0021C55C /* frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AD82618D22B0021C55C /* frame.m */; };
+		EBED0AD92618D22B0021C55C /* responder.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AD82618D22B0021C55C /* responder.m */; };
 		EBED0AEA2619AF400021C55C /* window.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AE92619AF400021C55C /* window.m */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,8 @@
 		EBED0AC52618A2140021C55C /* view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
 		EBED0ACE2618A36E0021C55C /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		EBED0AD02618A8650021C55C /* NSColor+color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+color.h"; sourceTree = "<group>"; };
-		EBED0AD82618D22B0021C55C /* frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frame.m; sourceTree = "<group>"; };
-		EBED0AE02618D2DE0021C55C /* frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		EBED0AD82618D22B0021C55C /* responder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responder.m; sourceTree = "<group>"; };
+		EBED0AE02618D2DE0021C55C /* responder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = responder.h; sourceTree = "<group>"; };
 		EBED0AE92619AF400021C55C /* window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = window.m; sourceTree = "<group>"; };
 		EBED0AEC2619AF530021C55C /* window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +85,8 @@
 				EBED0AD02618A8650021C55C /* NSColor+color.h */,
 				EBED0AC42618A1FF0021C55C /* view.h */,
 				EBED0AC52618A2140021C55C /* view.m */,
-				EBED0AD82618D22B0021C55C /* frame.m */,
-				EBED0AE02618D2DE0021C55C /* frame.h */,
+				EBED0AD82618D22B0021C55C /* responder.m */,
+				EBED0AE02618D2DE0021C55C /* responder.h */,
 				EBED0AE92619AF400021C55C /* window.m */,
 				EBED0AEC2619AF530021C55C /* window.h */,
 			);
@@ -150,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBED0AD92618D22B0021C55C /* frame.m in Sources */,
+				EBED0AD92618D22B0021C55C /* responder.m in Sources */,
 				EBED0AC62618A2140021C55C /* view.m in Sources */,
 				EB0D62282614C33C003C87B2 /* main.m in Sources */,
 				EBED0AEA2619AF400021C55C /* window.m in Sources */,

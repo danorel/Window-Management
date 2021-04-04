@@ -14,8 +14,8 @@
  *  - drawing elements on the screen.
  *  - drawing background on the screen.
  */
-#define COLOR_DRAWING @"#ffffff"
-#define COLOR_BACKGROUND @"#25854b"
+#define VIEW_COLOR_DRAWING @"#ffffff"
+#define VIEW_COLOR_BACKGROUND @"#25854b"
 
 @interface DOView : NSView <NSWindowDelegate> {
     NSColor* const colorDrawing;

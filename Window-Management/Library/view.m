@@ -11,8 +11,8 @@
 
 - (instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
-    self.colorDrawing = [NSColor colorFromHexString:COLOR_DRAWING];
-    self.colorBackground = [NSColor colorFromHexString:COLOR_BACKGROUND];
+    self.colorDrawing = [NSColor colorFromHexString:VIEW_COLOR_DRAWING];
+    self.colorBackground = [NSColor colorFromHexString:VIEW_COLOR_BACKGROUND];
     return self;
 }
 
