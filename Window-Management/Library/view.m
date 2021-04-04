@@ -5,9 +5,9 @@
 //  Created by Dan Orel on 03.04.2021.
 //
 
-#import "window_view.h"
+#import "view.h"
 
-@implementation DemoView
+@implementation DOView
 
 - (instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];

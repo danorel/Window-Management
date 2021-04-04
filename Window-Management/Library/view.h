@@ -6,7 +6,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "NSColor+window_color.h"
+#import "NSColor+color.h"
 
 /*
  * Declare the constants for View.
@@ -17,7 +17,7 @@
 #define COLOR_DRAWING @"#ffffff"
 #define COLOR_BACKGROUND @"#25854b"
 
-@interface DemoView : NSView <NSWindowDelegate> {
+@interface DOView : NSView <NSWindowDelegate> {
     NSColor* const colorDrawing;
     NSColor* const colorBackground;
 }

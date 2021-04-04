@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB0D62282614C33C003C87B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D62272614C33C003C87B2 /* main.m */; };
-		EBED0AC62618A2140021C55C /* window_view.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC52618A2140021C55C /* window_view.m */; };
-		EBED0ACA2618A22F0021C55C /* demo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC92618A22F0021C55C /* demo.m */; };
+		EBED0AC62618A2140021C55C /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC52618A2140021C55C /* view.m */; };
+		EBED0AD92618D22B0021C55C /* frame.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AD82618D22B0021C55C /* frame.m */; };
+		EBED0AEA2619AF400021C55C /* window.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AE92619AF400021C55C /* window.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,12 +30,14 @@
 		EB0D62272614C33C003C87B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB0D622F2614C62E003C87B2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EBED0AC12618A08B0021C55C /* Window-Management */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Window-Management"; sourceTree = "<group>"; };
-		EBED0AC42618A1FF0021C55C /* window_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = window_view.h; sourceTree = "<group>"; };
-		EBED0AC52618A2140021C55C /* window_view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = window_view.m; sourceTree = "<group>"; };
-		EBED0AC92618A22F0021C55C /* demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo.m; sourceTree = "<group>"; };
-		EBED0ACC2618A2510021C55C /* demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
+		EBED0AC42618A1FF0021C55C /* view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
+		EBED0AC52618A2140021C55C /* view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
 		EBED0ACE2618A36E0021C55C /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
-		EBED0AD02618A8650021C55C /* NSColor+window_color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+window_color.h"; sourceTree = "<group>"; };
+		EBED0AD02618A8650021C55C /* NSColor+color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+color.h"; sourceTree = "<group>"; };
+		EBED0AD82618D22B0021C55C /* frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = frame.m; sourceTree = "<group>"; };
+		EBED0AE02618D2DE0021C55C /* frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		EBED0AE92619AF400021C55C /* window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = window.m; sourceTree = "<group>"; };
+		EBED0AEC2619AF530021C55C /* window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +71,26 @@
 		EB0D62262614C33C003C87B2 /* Window-Management */ = {
 			isa = PBXGroup;
 			children = (
+				EBED0ADB2618D2360021C55C /* Library */,
 				EB0D62272614C33C003C87B2 /* main.m */,
 				EBED0AC12618A08B0021C55C /* Window-Management */,
-				EBED0AC42618A1FF0021C55C /* window_view.h */,
-				EBED0AC52618A2140021C55C /* window_view.m */,
-				EBED0AC92618A22F0021C55C /* demo.m */,
-				EBED0ACC2618A2510021C55C /* demo.h */,
 				EBED0ACE2618A36E0021C55C /* main.h */,
-				EBED0AD02618A8650021C55C /* NSColor+window_color.h */,
 			);
 			path = "Window-Management";
+			sourceTree = "<group>";
+		};
+		EBED0ADB2618D2360021C55C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EBED0AD02618A8650021C55C /* NSColor+color.h */,
+				EBED0AC42618A1FF0021C55C /* view.h */,
+				EBED0AC52618A2140021C55C /* view.m */,
+				EBED0AD82618D22B0021C55C /* frame.m */,
+				EBED0AE02618D2DE0021C55C /* frame.h */,
+				EBED0AE92619AF400021C55C /* window.m */,
+				EBED0AEC2619AF530021C55C /* window.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +128,7 @@
 				};
 			};
 			buildConfigurationList = EB0D621F2614C33C003C87B2 /* Build configuration list for PBXProject "Window-Management" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,9 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBED0ACA2618A22F0021C55C /* demo.m in Sources */,
-				EBED0AC62618A2140021C55C /* window_view.m in Sources */,
+				EBED0AD92618D22B0021C55C /* frame.m in Sources */,
+				EBED0AC62618A2140021C55C /* view.m in Sources */,
 				EB0D62282614C33C003C87B2 /* main.m in Sources */,
+				EBED0AEA2619AF400021C55C /* window.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +281,11 @@
 		EB0D622C2614C33C003C87B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5C32DC9T5;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danorel.Window-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,7 +293,11 @@
 		EB0D622D2614C33C003C87B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S5C32DC9T5;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danorel.Window-Management";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
