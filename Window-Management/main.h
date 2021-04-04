@@ -9,4 +9,4 @@
 #import <Cocoa/Cocoa.h>
 
 // Import source files from the project.
-#import "Library/frame.h"
+#import "Library/responder.h"

@@ -13,8 +13,7 @@ int main(int argc, const char * argv[]) {
         NSApp = [NSApplication sharedApplication];
 
         // Set up the window and drawing mechanism
-        DOFrame *frame = [[DOFrame alloc] initWithName:@"Window-Management Application"];
-        [frame setup];
+        DOResponder *responder = [[DOResponder alloc] initOnlyName:@"Window-Management Application"];
 
         // Run the main event loop
         [NSApp run];
