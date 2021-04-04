@@ -45,6 +45,7 @@
                       styleMask:NSWindowStyleMaskTitled
                                |NSWindowStyleMaskClosable
                                |NSWindowStyleMaskMiniaturizable
+                               |NSWindowStyleMaskResizable
                           backing:NSBackingStoreBuffered
                           defer:NO
                       ];

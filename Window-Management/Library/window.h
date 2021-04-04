@@ -9,6 +9,8 @@
 
 @interface DOWindow : NSWindow
 
+- (void) windowDidResize:(NSNotification*) notification;
+
 - (void) rightMouseDown: (NSEvent*) event;
 
 @end

@@ -9,6 +9,11 @@
 
 @implementation DOWindow
 
+- (void) windowDidResize:(NSNotification*) notification {
+    NSSize size = [ [ self contentView ] frame ].size;
+    NSLog(@"Window resize: %lf, %lf", size.width, size.height);
+}
+
 - (void) rightMouseDown: (NSEvent*) event {
     NSPoint location = [event locationInWindow];
     NSRect  bounds   = [self.contentView bounds];
