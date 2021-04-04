@@ -42,7 +42,7 @@
     
     // Getting the length per triangle side.
     CGFloat length = get_triangle_length(width, height);
-        
+    
     // Extracting all possible sides of triangle.
     PointTuple ptA = get_triangle_A(location.x, location.y, length);
     PointTuple ptB = get_triangle_B(location.x, location.y, length);
@@ -53,14 +53,22 @@
     self->B = NSMakePoint(ptB.x, ptB.y);
     self->C = NSMakePoint(ptC.x, ptC.y);
     
+    // Trigger drawRect method.
     [self setNeedsDisplay:true];
 }
 
 // Events: Mouse clicks.
 
+- (void) mouseUp: (NSEvent *) event {}
+
+- (void) mouseDown: (NSEvent *) event {}
+
+- (void) mouseDragged:(NSEvent *) event {
+    [self drawTriangle: [event locationInWindow]];
+}
+
 - (void) rightMouseDown: (NSEvent*) event {
-    NSPoint location = [event locationInWindow];
-    [self drawTriangle: location];
+    [self drawTriangle: [event locationInWindow]];
 }
 
 // Events: Window events.

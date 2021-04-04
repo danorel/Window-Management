@@ -31,7 +31,10 @@
 - (void) drawRect:(NSRect) rect;
 - (void) drawTriangle:(NSPoint) location;
 
-- (void) rightMouseDown: (NSEvent*) event;
+- (void) mouseUp:(NSEvent *) event;
+- (void) mouseDown:(NSEvent *) event;
+- (void) mouseDragged:(NSEvent *) event;
+- (void) rightMouseDown:(NSEvent*) event;
 
 @property (atomic, copy, readwrite) NSColor* colorDrawing;
 @property (atomic, copy, readwrite) NSColor* colorBackground;
