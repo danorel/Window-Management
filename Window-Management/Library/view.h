@@ -6,6 +6,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "NSColor+color.h"
 #import "triangle.h"
 

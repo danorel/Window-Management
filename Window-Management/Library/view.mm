@@ -38,9 +38,19 @@
 - (void) drawTriangle: (NSPoint) location {
     NSRect bounds = [self bounds];
     
-    unsigned int side_length = [get_triangle_length bounds.size.width bounds.size.height];
+    CGFloat width = bounds.size.width;
+    CGFloat height = bounds.size.height;
     
-    NSLog(@"Side length: %uf", side_length);
+    CGFloat length = get_triangle_length(width, height);
+    
+    NSLog(@"Logging side length: %f", length);
+    
+//    PointTuple ptA = [get_triangle_A(1, 2, 5)];
+//    NSPoint A = [[NSPoint alloc] init];
+//    A.x = ptA.x;
+//    A.y = ptA.y;
+    
+//    NSLog(@"Side length: %uf", side_length);
     
     NSLog(@"[View]: Printing size of view: %f x %f", bounds.size.width, bounds.size.height);
     NSLog(@"[View]: Printing Location x: %f", location.x);
