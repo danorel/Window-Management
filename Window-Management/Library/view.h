@@ -7,6 +7,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "NSColor+color.h"
+#import "triangle.h"
 
 /*
  * Declare the constants for View.
@@ -23,6 +24,9 @@
 }
 
 - (void) drawRect:(NSRect) rect;
+- (void) drawTriangle:(NSPoint) location;
+
+- (void) rightMouseDown: (NSEvent*) event;
 
 @property (atomic, copy, readwrite) NSColor* colorDrawing;
 @property (atomic, copy, readwrite) NSColor* colorBackground;

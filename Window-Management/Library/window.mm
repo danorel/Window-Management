@@ -12,9 +12,9 @@
 - (void) rightMouseDown: (NSEvent*) event {
     NSPoint location = [event locationInWindow];
     NSRect  bounds   = [self.contentView bounds];
-    NSLog(@"Printing size of view: %f x %f", bounds.size.width, bounds.size.height);
-    NSLog(@"Printing Location x: %f", location.x);
-    NSLog(@"Printing Location y: %f", location.y);
+    NSLog(@"[DOWindow]: Printing size of view: %f x %f", bounds.size.width, bounds.size.height);
+    NSLog(@"[DOWindow]: Printing Location x: %f", location.x);
+    NSLog(@"[DOWindow]: Printing Location y: %f", location.y);
 }
 
 @end
