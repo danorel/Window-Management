@@ -22,9 +22,6 @@
 - (void) drawRect:(NSRect) rect  {
     [super drawRect:rect];
 
-    // float width  = [self bounds].size.width;
-    // float height = [self bounds].size.height;
-    
     // Set the background drawing color to while.
     [self.colorBackground set];
     NSRectFill([self bounds]);
@@ -37,6 +34,27 @@
     NSPoint p2 = NSMakePoint(100, 100);
     [NSBezierPath strokeLineFromPoint:p1 toPoint:p2];
 }
+
+- (void) drawTriangle: (NSPoint) location {
+    NSRect bounds = [self bounds];
+    
+    unsigned int side_length = [get_triangle_length bounds.size.width bounds.size.height];
+    
+    NSLog(@"Side length: %uf", side_length);
+    
+    NSLog(@"[View]: Printing size of view: %f x %f", bounds.size.width, bounds.size.height);
+    NSLog(@"[View]: Printing Location x: %f", location.x);
+    NSLog(@"[View]: Printing Location y: %f", location.y);
+}
+
+// Events: Mouse clicks.
+
+- (void) rightMouseDown: (NSEvent*) event {
+    NSPoint location = [event locationInWindow];
+    [self drawTriangle: location];
+}
+
+// Events: Window events.
 
 -(void) windowWillClose:(NSNotification*) notification {
     [NSApp terminate:self];

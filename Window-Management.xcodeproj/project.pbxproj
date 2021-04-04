@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EB0D62282614C33C003C87B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0D62272614C33C003C87B2 /* main.m */; };
-		EBED0AC62618A2140021C55C /* view.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC52618A2140021C55C /* view.m */; };
-		EBED0AD92618D22B0021C55C /* responder.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AD82618D22B0021C55C /* responder.m */; };
-		EBED0AEA2619AF400021C55C /* window.m in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AE92619AF400021C55C /* window.m */; };
+		EBED0AC62618A2140021C55C /* view.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AC52618A2140021C55C /* view.mm */; };
+		EBED0AD92618D22B0021C55C /* responder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AD82618D22B0021C55C /* responder.mm */; };
+		EBED0AEA2619AF400021C55C /* window.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AE92619AF400021C55C /* window.mm */; };
+		EBED0AF22619CB810021C55C /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBED0AF02619CB800021C55C /* triangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,13 +32,15 @@
 		EB0D622F2614C62E003C87B2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EBED0AC12618A08B0021C55C /* Window-Management */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Window-Management"; sourceTree = "<group>"; };
 		EBED0AC42618A1FF0021C55C /* view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = view.h; sourceTree = "<group>"; };
-		EBED0AC52618A2140021C55C /* view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = view.m; sourceTree = "<group>"; };
+		EBED0AC52618A2140021C55C /* view.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = view.mm; sourceTree = "<group>"; };
 		EBED0ACE2618A36E0021C55C /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		EBED0AD02618A8650021C55C /* NSColor+color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSColor+color.h"; sourceTree = "<group>"; };
-		EBED0AD82618D22B0021C55C /* responder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responder.m; sourceTree = "<group>"; };
+		EBED0AD82618D22B0021C55C /* responder.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = responder.mm; sourceTree = "<group>"; };
 		EBED0AE02618D2DE0021C55C /* responder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = responder.h; sourceTree = "<group>"; };
-		EBED0AE92619AF400021C55C /* window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = window.m; sourceTree = "<group>"; };
+		EBED0AE92619AF400021C55C /* window.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = window.mm; sourceTree = "<group>"; };
 		EBED0AEC2619AF530021C55C /* window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		EBED0AF02619CB800021C55C /* triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = triangle.cpp; sourceTree = "<group>"; };
+		EBED0AF52619D3F40021C55C /* triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +87,13 @@
 			children = (
 				EBED0AD02618A8650021C55C /* NSColor+color.h */,
 				EBED0AC42618A1FF0021C55C /* view.h */,
-				EBED0AC52618A2140021C55C /* view.m */,
-				EBED0AD82618D22B0021C55C /* responder.m */,
+				EBED0AC52618A2140021C55C /* view.mm */,
+				EBED0AD82618D22B0021C55C /* responder.mm */,
 				EBED0AE02618D2DE0021C55C /* responder.h */,
-				EBED0AE92619AF400021C55C /* window.m */,
+				EBED0AE92619AF400021C55C /* window.mm */,
 				EBED0AEC2619AF530021C55C /* window.h */,
+				EBED0AF02619CB800021C55C /* triangle.cpp */,
+				EBED0AF52619D3F40021C55C /* triangle.h */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -150,10 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBED0AD92618D22B0021C55C /* responder.m in Sources */,
-				EBED0AC62618A2140021C55C /* view.m in Sources */,
+				EBED0AD92618D22B0021C55C /* responder.mm in Sources */,
+				EBED0AC62618A2140021C55C /* view.mm in Sources */,
 				EB0D62282614C33C003C87B2 /* main.m in Sources */,
-				EBED0AEA2619AF400021C55C /* window.m in Sources */,
+				EBED0AF22619CB810021C55C /* triangle.cpp in Sources */,
+				EBED0AEA2619AF400021C55C /* window.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
