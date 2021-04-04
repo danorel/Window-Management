@@ -22,6 +22,10 @@
 @interface DOView : NSView <NSWindowDelegate> {
     NSColor* const colorDrawing;
     NSColor* const colorBackground;
+    
+    NSPoint A;
+    NSPoint B;
+    NSPoint C;
 }
 
 - (void) drawRect:(NSRect) rect;

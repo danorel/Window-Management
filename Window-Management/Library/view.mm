@@ -29,32 +29,31 @@
     // Set the drawing color to black.
     [self.colorDrawing set];
     
-    // Draw the line on the screen.
-    NSPoint p1 = NSMakePoint(1, 1);
-    NSPoint p2 = NSMakePoint(100, 100);
-    [NSBezierPath strokeLineFromPoint:p1 toPoint:p2];
+    [NSBezierPath strokeLineFromPoint:A toPoint:B];
+    [NSBezierPath strokeLineFromPoint:B toPoint:C];
+    [NSBezierPath strokeLineFromPoint:C toPoint:A];
 }
 
 - (void) drawTriangle: (NSPoint) location {
     NSRect bounds = [self bounds];
-    
+
     CGFloat width = bounds.size.width;
     CGFloat height = bounds.size.height;
     
+    // Getting the length per triangle side.
     CGFloat length = get_triangle_length(width, height);
+        
+    // Extracting all possible sides of triangle.
+    PointTuple ptA = get_triangle_A(location.x, location.y, length);
+    PointTuple ptB = get_triangle_B(location.x, location.y, length);
+    PointTuple ptC = get_triangle_C(location.x, location.y, length);
     
-    NSLog(@"Logging side length: %f", length);
+    // Making NSPoints from extracted struct points.
+    self->A = NSMakePoint(ptA.x, ptA.y);
+    self->B = NSMakePoint(ptB.x, ptB.y);
+    self->C = NSMakePoint(ptC.x, ptC.y);
     
-//    PointTuple ptA = [get_triangle_A(1, 2, 5)];
-//    NSPoint A = [[NSPoint alloc] init];
-//    A.x = ptA.x;
-//    A.y = ptA.y;
-    
-//    NSLog(@"Side length: %uf", side_length);
-    
-    NSLog(@"[View]: Printing size of view: %f x %f", bounds.size.width, bounds.size.height);
-    NSLog(@"[View]: Printing Location x: %f", location.x);
-    NSLog(@"[View]: Printing Location y: %f", location.y);
+    [self setNeedsDisplay:true];
 }
 
 // Events: Mouse clicks.
